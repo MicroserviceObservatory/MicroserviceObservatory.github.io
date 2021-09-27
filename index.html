@@ -63,7 +63,7 @@
 				<ul align="justify">
 					<li> <b>Kubernetes Operators:</b> These encapsulate administrator knowledge about managing the life-cycle of a microservices. Our focus is to understand and quantify the availability and security implications of automation provided by ``operators''. Motivated by our observations, we are developing tools to safeguard and protect production networks from emerging issues.
 					<li> <b>Digitial Clone for AIOps (KubeKlone):</b> A recent trend involves employing machine learning techniques to automate configuration-related Operational tasks (often referred to as AIOPs). Often such automation is geared towards discovering configuration choices that minimize cost, increase revenue, or improve performance. Today, AIOPs techniques are costly and time-consuming because the ML techniques require significant amounts of data, which is challenging to collect at scale. We are developing a digital twin of cloud-based cloud-native infrastructure. We plan to explore the feasibility of design AIOps for emerging cloud-native infrastructure deployments, e.g., 5G and edge computing.
-						<li> <b>eBPF Observability:</b> Our goal is to track and attribute requests and eBPF programs.
+						<li> <b>eBPF Observability:</b> Extended Berkeley Packet Filters (eBPF) are an increasingly popular technology used to support networking and monitoring for dynamic microservices environments. This is due to the flexibility and performance improvements that come with the ability to dynamically verify and insert programs into the kernel. However, this programmability makes it challenging to understand the system state at runtime. For example, suppose network packets are being anomalously dropped or corrupted; the root cause could be eBPF programs that process network packets, but there's currently no means to trace the eBPF programs that altered a packet, or to measure the resource consumption of these eBPF programs. To reduce time to insight for such systems, we are developing an observability framework to manage eBPF-based distributed systems.
 				</ul>
 			</p>
             <p><a class="btn btn-success btn-md" href="#" role="button">Read our Vision Paper on Microservices and associated challenges &raquo;</a></p>
@@ -75,26 +75,33 @@
     <div class="container">
       <div class="row" id="highlights">
         <h1>Projects</h1>
-        <div class="col-md-4" >
+        <div class="col-md-3" >
           <div class="thumbnail">
             <embed class="img" src="imgs/controller.png" style="padding-top: 10%; padding-bottom: 10%"  alt="KubeKlone." width="100%">
           </div>
           <h2> <a href="kubeklone.html">KubeKlone</a> </h2>
           <p align="justify">A digital clone of a microservices infrastructure provides integration of several learning-based AIOPs (specifically those based on Bayesian optimization and Reinforcement ).</p>
         </div><!-- /.col-md-4 -->
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="thumbnail">
             <img class="img" src="imgs/survey.png" alt="Survey results." width="100%">
           </div>
           <h2> <a href="">Comprehensive analysis Kubernete Operator</a>  </h2>
           <p align="justify">A first look at open issues of over 40 operators from one of the most prominent operator frameworks (<a href="https://operatorhub.io/">Operator Hub</a>). </p>
         </div><!-- /.col-md-4 -->
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="thumbnail">
             <img class="img" src="imgs/suture.png" alt="Suture Framework" width="65%">
           </div>
           <h2> <a href="">Suture</a> </h2>
           <p align="justify">A framework that turbo-charges existing Kubernetes operators to support virtualization, finer-grained security, and defense capabilities.</p>
+        </div><!-- /.col-md-4 -->
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img class="img" src="imgs/ebpf.png" alt="bpfscope" style="padding-top: 15%; padding-bottom: 15%" width="65%">
+          </div>
+          <h2> <a href="">BPFScope</a> </h2>
+          <p align="justify"> An observability framework to manage eBPF-based distributed systems.</p>
         </div><!-- /.col-md-4 -->
       </div><!-- /.row -->
 
@@ -114,6 +121,20 @@
         
         </div>
       </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="code">
+        <h1>Grants</h1>
+        <div class="col-lg-7">
+          <!-- <h2 class="featurette-heading">LegoSDN Source Code</h2> -->
+          <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" align="left" /> <p align="justify" class="lead"> &nbsp; <a href="https://users.cs.duke.edu/~tbenson/">Theo</a>, received a 50K grant from NEC to work on data-driven approaches for improving web performance on 5G. </p>
+        </div>
+        <div>
+
+        </div>
+      </div>
+
 
       <hr class="featurette-divider">
 
@@ -150,6 +171,16 @@
                 <h4>Ayush Bhardwaj</h4>
                 <p>Ayush is a first year PhD student in the Computer Science Department.</p>
                 <p><a href="https://ayushbhardwaj96.com/">Personal Web Page</a></p>
+              </div>
+            </div>
+          </div><!-- /.col-xs-6 .col-md-3 -->
+          <div class="col-xs-4 col-md-3 col-centered">
+            <div class="thumbnail center-thumb-caption">
+              <img class="img-rounded" src="imgs/desmond.jpg" alt="Desmond">
+              <div class="caption">
+                <h4>Desmond Cheong</h4>
+                <p>Desmond is a fourth year undergraduate student in the Computer Science Department.</p>
+                <p><a href="https://www.desmondcheong.com/">Personal Web Page</a></p>
               </div>
             </div>
           </div><!-- /.col-xs-6 .col-md-3 -->
